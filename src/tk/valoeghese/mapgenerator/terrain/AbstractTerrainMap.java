@@ -12,7 +12,7 @@ public abstract class AbstractTerrainMap implements Terrain {
 		boolean e = this.sample(x + 1, y) >= Main.target;
 		boolean s = this.sample(x, y - 1) >= Main.target;
 		boolean w = this.sample(x - 1, y) >= Main.target;
-		boolean c = this.sample(x, y) < 0;
+		boolean c = this.sample(x, y) < Main.target;
 
 		if (c) {
 			if (n || e || s || w) {
